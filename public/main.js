@@ -47,6 +47,10 @@ const shuffleDeck = () => {
     document.querySelector('.display-deck').appendChild(listItem)
   }
 }
+const pickCard = () => {
+pickedCard = deck[0]
+document.querySelector('.picked-card').textContent = pickedCard 
+}
 
 //console.log(deck)
 const main = () => {
@@ -55,4 +59,5 @@ const main = () => {
 }
 
 document.addEventListener('DOMContentLoaded', main)
+document.querySelector('.pick=card').addEventListener('click', pickCard)
 
