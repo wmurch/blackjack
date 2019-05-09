@@ -47,9 +47,6 @@ const shuffleDeck = () => {
     x=deck[i]
     deck[i]=deck[j]
     deck[j]=x
-    console.log(deck[i])
-    console.log(deck[j])
-    //deck.push(deck[i])
   }
 console.log(deck)
 
@@ -66,15 +63,14 @@ const playHand = () => {
 
    score = ''
     for (let i = 1; i <= score; i++){
-
     }
-
 }
 /* const pickCard = () => {
 pickedCard = deck[0]
 document.querySelector('.picked-card').textContent = pickedCard 
 } */
 //console.log(deck)
+
 const main = () => {
   createDeck()
   shuffleDeck()
