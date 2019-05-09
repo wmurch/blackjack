@@ -26,29 +26,19 @@ const createDeck = () => {
         value = rank
       }
 
-      if (rank === 'Jack' || rank === 'Queen' || rank === 'King' || (rank === 'Ace')) {
-
-        imgRank = rank.charAt(0).textContent
-      }
-      else {
-        imgRank = rank
-      }
-      imgSuit = suit.charAt(0).textContent
-
-      imgProp = (imgRank + + imgSuit) + ".png"
-
+      imgProp = "/images/" + (imgRank + "_of_" + imgSuit) + ".svg"
 
       const card = {
         suit: suit,
         rank: rank,
         value: value,
-        img: imgProp       }
+        img: imgProp }
 
       deck.push(card)
     console.log(card) 
     }
   }
-}
+
 console.log(deck)
 const shuffleDeck = () => {
   x=''
@@ -91,4 +81,4 @@ const main = () => {
 }
 document.addEventListener('DOMContentLoaded', main)
 //document.querySelector('.pick=card').addEventListener('click', pickCard)
-
+}
