@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Card Game</title>
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="stylesheet" href="/screen.css">
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/screen.css" />
   </head>
   <body>
     <div class="card-game">
@@ -13,9 +13,12 @@
       <button class="start"></button>
       <button class="hit me"></button>
       <button class="stand"></button>
-      <div id="player1"></div>
-      <div id="house"></div>
-      
+      <div class="players"></div>
+
+      <div class="deck">
+        <div class="card"></div>
+        <div class="status"></div>
+      </div>
     </div>
     <script src="/main.js" charset="utf-8"></script>
   </body>
